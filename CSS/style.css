@@ -1,0 +1,190 @@
+
+/* STEP 1: Universal Styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* STEP 2: Body Styling */
+body{
+    font-family: Arial,sans-serif;
+    background-color: #F4F7FB;
+    color: #14213D;
+    line-height: 1.6;
+}
+/* STEP 3: Header Styling */
+
+header{
+    background-color: 	#14213D;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+header h1{
+    font-size: 26px;
+}
+/* STEP 4: Navigation Styling */
+nav{
+    display: flex;
+    gap: 30px;
+    align-items: center;  
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+nav a:hover{
+    color: 	#00B4D8;
+    transition: 0.3s;
+}
+/* STEP 5: Hero Section */
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 80px 10%;
+    background-color:white ;
+}
+.hero-content{
+    max-width: 550px;
+}
+.hero-content h2{
+    font-size: 40px;
+    color: #14213D;
+    margin-bottom: 15px;
+}
+.hero-content p{
+    font-size: 17px;
+    color: #555555;
+    margin-bottom: 25px;
+}
+/* STEP 6: Button Styling */
+
+.button{
+    display: inline-block;
+    background-color: #0077B6;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+.button:hover{
+    background-color: #14213D;
+}
+/* STEP 7: Profile Image */
+
+.hero-image img{
+    width: 280px;
+    height: 280px;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 5px solid #00B4D8;
+}
+/* STEP 8: Introduction Section */
+
+.introduction{
+    text-align:center ;
+    padding: 60px 10%;
+}
+.introduction h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #14213D;
+}
+.introduction p{
+    max-width: 700px;
+    margin: auto;
+    color: #555555;
+    font-size: 17px;
+}
+/* STEP 9: Skills Section */
+
+.skills{
+    text-align: center;
+    padding: 60px 10%;
+    background-color:	#EAF2F8;
+}
+.skills h2{
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+.skill-container{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.skill-card{
+    background-color: white;
+    padding: 30px 20px;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+.skill-card h3{
+    color:  #0077B6;
+    margin-bottom: 10px;
+}
+.skill-card p{
+    color: #555555;
+}
+.skill-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+/* STEP 10: Footer */
+
+footer {
+    background-color: #14213D;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/* STEP 11: Responsive Design */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+}
+@media (max-width: 768px) {
+    nav {
+        gap: 18px;
+    }
+}
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 50px 7%;
+    }
+}
+@media (max-width: 768px) {
+    .hero-content h2 {
+        font-size: 30px;
+    }
+}
+@media (max-width: 768px) {
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+    }
+}
+@media (max-width: 768px) {
+    .skill-container {
+        align-items: center;
+    }
+}
