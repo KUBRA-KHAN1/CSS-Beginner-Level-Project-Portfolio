@@ -28,10 +28,11 @@ Portfolio/
 ├── about.html
 ├── contact.html
 │
-├── css/
-│   ├── style.css
-│   ├── about.css
-│   └── contact.css
+├── style.css
+├── about.css
+├── contact.css
+├── images/
+│   └── image1.jpeg
 │
 └── README.md
 ```
